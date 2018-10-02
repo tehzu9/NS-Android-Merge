@@ -1,0 +1,1 @@
+/home/tahseen/PhpstormProjects/Pos/platforms/android/app/src/main/assets/metadata

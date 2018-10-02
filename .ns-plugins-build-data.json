@@ -1,0 +1,12 @@
+{
+	"nativescript-ui-sidedrawer": {
+		"/home/tahseen/PhpstormProjects/Pos/node_modules/nativescript-ui-sidedrawer/platforms/android/TNSSideDrawer-release.aar": "fc9ad14603569ce869a1c6a1e0d6428404c6fb00"
+	},
+	"nativescript-ui-core": {
+		"/home/tahseen/PhpstormProjects/Pos/node_modules/nativescript-ui-core/platforms/android/typings/core.d.ts": "57a0606617eef3c732c1a7f32480b1e166ad27ce",
+		"/home/tahseen/PhpstormProjects/Pos/node_modules/nativescript-ui-core/platforms/android/TNSCore-release.aar": "7e9c7f089e6c8aeea48b19e54e4bb1ff62b70eed"
+	},
+	"tns-core-modules-widgets": {
+		"/home/tahseen/PhpstormProjects/Pos/node_modules/tns-core-modules-widgets/platforms/android/widgets-release.aar": "9454da0bf1e1b216ee31b60622bbcb820dbc1ddf"
+	}
+}

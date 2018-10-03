@@ -1,9 +1,10 @@
 package com.stallion.pos;
 
+import android.app.Application;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
-import android.support.design.widget.Snackbar;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -13,8 +14,13 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.tns.NativeScriptActivity;
+import com.tns.Runtime;
+
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+    public Runtime nsRuntime;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,8 +33,24 @@ public class MainActivity extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+
+                if (nsRuntime == null) {
+                    Application currentApplication =  MainActivity.this.getApplication();
+                    nsRuntime = com.tns.RuntimeHelper.initRuntime(currentApplication);
+                    if (nsRuntime != null) {
+                        nsRuntime.run();
+                    } else {
+                        return;
+                    }
+                }
+
+                android.content.Intent intent = new android.content.Intent(MainActivity.this, NativeScriptActivity.class);
+                intent.setAction(Intent.ACTION_DEFAULT);
+                startActivity(intent);
+
+
+//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+//                        .setAction("Action", null).show();
             }
         });
 

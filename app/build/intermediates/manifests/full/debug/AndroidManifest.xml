@@ -46,15 +46,14 @@
             android:name="com.tns.NativeScriptActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:label="@string/title_activity_kimera"
-            android:theme="@style/LaunchScreenTheme" >
-            <meta-data
-                android:name="SET_THEME_ON_LAUNCH"
-                android:resource="@style/AppTheme" />
+            android:theme="@style/AppTheme" >
 
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN" /> -->
-            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-            <!-- </intent-filter> -->
+            <!-- <meta-data android:name="SET_THEME_ON_LAUNCH" android:resource="@style/AppTheme" /> -->
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            </intent-filter>
         </activity>
         <activity android:name="com.tns.ErrorReportActivity" />
 

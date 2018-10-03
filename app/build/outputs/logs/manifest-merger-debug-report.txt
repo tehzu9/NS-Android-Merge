@@ -169,15 +169,11 @@ ADDED from /home/tahseen/PhpstormProjects/Pos/platforms/android/app/src/main/And
 	android:configChanges
 		ADDED from /home/tahseen/PhpstormProjects/Pos/platforms/android/app/src/main/AndroidManifest.xml:46:4-65
 	android:theme
-		ADDED from /home/tahseen/PhpstormProjects/Pos/platforms/android/app/src/main/AndroidManifest.xml:47:4-44
+		ADDED from /home/tahseen/PhpstormProjects/Pos/platforms/android/app/src/main/AndroidManifest.xml:47:4-35
 	android:name
 		ADDED from /home/tahseen/PhpstormProjects/Pos/platforms/android/app/src/main/AndroidManifest.xml:44:4-47
-meta-data#SET_THEME_ON_LAUNCH
-ADDED from /home/tahseen/PhpstormProjects/Pos/platforms/android/app/src/main/AndroidManifest.xml:49:4-87
-	android:resource
-		ADDED from /home/tahseen/PhpstormProjects/Pos/platforms/android/app/src/main/AndroidManifest.xml:49:50-84
-	android:name
-		ADDED from /home/tahseen/PhpstormProjects/Pos/platforms/android/app/src/main/AndroidManifest.xml:49:15-49
+intent-filter#action:name:android.intent.action.MAIN
+ADDED from /home/tahseen/PhpstormProjects/Pos/platforms/android/app/src/main/AndroidManifest.xml:51:4-54:20
 activity#com.tns.ErrorReportActivity
 ADDED from /home/tahseen/PhpstormProjects/Pos/platforms/android/app/src/main/AndroidManifest.xml:56:3-57
 	android:name
